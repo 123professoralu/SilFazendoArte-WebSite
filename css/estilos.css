@@ -1,0 +1,155 @@
+/*Estilização do BODY da página*/
+body{
+    margin: 0;
+    border: 0;
+    font-family: 'Tahoma', 'Arial';
+}
+/*Estização do HEADER da página*/
+header{
+    background-color: rgb(78, 8, 116);
+    padding: 20px 0 40px 200px;
+}
+
+.logo {
+    width: 20%;
+}
+/*Estilização do MENU do site*/
+nav {
+    color: white;
+    font-size: 28;
+    right: 2%;
+    top: -5%;
+    position: absolute;
+}
+
+nav li{
+    display: inline;
+    margin-right: 40px;
+    font-family: cursive;
+    font-size: 35px;
+}
+
+nav li a{
+    color: white;
+    text-decoration: none;
+}
+
+
+/*Estilização da DIV do header */
+.divHeader {
+    position: relative;
+}
+
+/*Estilização da sessão SOBRE NÓS*/
+.sobre_nos {
+    margin: 0;
+    text-align: justify;
+    width: 70%;
+    margin-left: 15%;
+}
+.img_sobrenos {
+    width: 15%;
+    float: left;
+    margin-right: 20px;
+}
+.titulo_sobrenos {
+    text-align: center;
+    clear: left;
+}
+/*Estilização da sessão NOSSO ESTABELECIMENTO*/
+.mapaGeral {
+    background: linear-gradient(#FFFFFF, #dad4f1);
+}
+.mapaGeral p{
+    text-align: center;
+}
+.mapa {
+    margin-left: 20%;
+}
+/*Estilização da sessão NOSSOS PRODUTOS*/
+.nossosprodutos{
+    padding: 2%;
+    background: linear-gradient(#dad4f1, rgb(78, 8, 116));
+}
+.div_nossosprodutos{
+    width: 70%;
+    margin-left: 30%;
+}
+.lista_nossosprodutos{
+    width: 30%;
+    display: inline-block;
+    vertical-align: "top";
+    list-style: none;
+}
+.lista_nossosprodutos li{
+    line-height: 2;
+}
+.lista_nossosprodutos li:before{
+    content: "★ ";
+}
+.img_nossosprodutos{
+    width: 15%;
+    border-radius: 8px;
+    box-shadow: 10px 10px 5px 0px #000000;
+    opacity: 1;
+    transition: 400ms;
+}
+.img_nossosprodutos:hover{
+    opacity: 0.5;
+}
+.video{
+    padding: 3% 0 0 20%;
+}
+/*Footer*/
+footer{
+	background: url("../img/fundo_rodape.png");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Define a transparência */
+    background-blend-mode: darken; /* Mistura as cores */
+	padding: 30px 10px 10px 0;
+}
+footer p{
+    font-weight: bold;
+    color: white;
+    /* display: inline-block; */
+    width: 100%;
+    text-align: right;
+    font-size: 20px;
+}
+footer i{
+    color: white;
+}
+.logo_footer{
+	width: 15%;
+    padding-left: 85%;
+}
+
+/*Estilização do Slider*/
+.carrossel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+}
+.carrossel img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    display: block;
+}
+.carrossel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(119, 6, 249, 0.5);
+    color: #fff;
+    padding: 10px;
+    cursor: grab;
+}
+.prev {
+    left: 0;
+}
+.next {
+    right: 0;
+}
