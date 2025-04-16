@@ -58,7 +58,6 @@ nav li a{
 /*Texto dos Produtos*/
 .texto-produtos{
     padding-left: 5%;
-
 }
 
 /* Container dos cards */
@@ -80,11 +79,9 @@ nav li a{
     text-align: center;
     transition: transform 0.3s ease-in-out;
 }
-
 .card:hover {
     transform: scale(1.05);
 }
-
 /* Imagens */
 .card img {
     width: 100%;
@@ -92,34 +89,16 @@ nav li a{
     object-fit: cover;
     border-radius: 10px;
 }
-
 /* Título */
 .card h2 {
     margin: 10px 0;
 }
-
 /* Preço */
 .preco {
-    display: block;
     font-size: 18px;
     font-weight: bold;
     color: #27ae60;
     margin: 10px 0;
-}
-
-/* Botão */
-.card button {
-    background-color: #3498db;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background 0.3s;
-}
-
-.card button:hover {
-    background: #2980b9;
 }
 
 /*Footer*/
@@ -145,4 +124,25 @@ footer i{
 .logo_footer{
 	width: 15%;
     padding-left: 85%;
+}
+
+/*Estilização da POP de Detalhes*/
+.pop{
+    margin: 0;
+}
+.pop img {
+    width: 700;
+    height: 500;
+    padding-left: 7%;
+}
+.pop h1{
+    font-size: 40px;
+	font-weight: bold;
+    text-align: center;
+	color:  rgb(78, 8, 116);
+}
+.pop p{
+    padding: 2% 0 7% 7% ;
+    margin: 0;
+    white-space: pre-line; /*Isso é o que faz o \n do JS funcionar*/
 }

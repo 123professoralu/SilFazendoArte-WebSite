@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Sil Fazendo Arte</title>
+        <link href="css/estilos_produtos.css" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <div class="pop">
+                <h1 id="nome-produto">Produto</h1>
+                <img id="imagem-produto" src="" alt="">
+                <p id="descricao-produto"></p> 
+                
+                <script>
+                    // Função para pegar parâmetros da URL
+                    function getParametro(nome) {
+                        const urlParams = new URLSearchParams(window.location.search);
+                        return urlParams.get(nome);
+                    }
+
+                    // Preencher os dados
+                    const nome = getParametro("nome");
+                    const imagem = getParametro("imagem");
+                    const descricao = getParametro("descricao");
+
+                    document.getElementById("nome-produto").textContent = nome;
+                    document.getElementById("imagem-produto").src = imagem;
+                    document.getElementById("imagem-produto").alt = nome;
+                    document.getElementById("descricao-produto").textContent = descricao;
+                </script>
+            </div>
+        </main>
+    </body>
+</html>
